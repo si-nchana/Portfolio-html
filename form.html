@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DETAILS</title>
+</head>
+<body>
+  <form >
+ <form>
+    <fieldset>
+        <legend>Personal Details</legend>
+    <label for="First name">First Name</label>
+    <input type="text" placeholder="Ex:Sinchana" id="First name" required name="First name"><br> <br>
+
+    <label for="Middle name">Middle name</label>
+    <input type="text" placeholder="Ex:S" id="Middle name"  name="Middle name"><br> <br>
+
+    <label for="Last name">Last Name</label>
+    <input type="text" placeholder="Ex:L" id="Last name"  name="Last name"><br> <br>
+
+    <label for="Email id">Email id</label>
+    <input type="email" placeholder="Ex:@gmail" id="Email id" required name="Email id"><br> <br>
+
+    <label for="DOB">DOB</label>
+    <input type="date" placeholder="Ex:dd/mm/yyyy" id="DOB" required name="DOB"><br> <br>
+</fieldset>
+ </form> 
+
+ 
+<form action="p.html">
+    <fieldset>
+        <legend> EDUCATIONAL DETAILS</legend>
+    <label for="Department">DEPARTMENT</label>
+    <br>
+    <br>
+    <input type="radio" id="Department" name="dept" value="CS" >
+    <label for="CS">CS</label>
+    
+    <input type="radio" id="Department" name="dept" value="Civil" >
+    <label for="Civil">Civil</label>
+
+    <input type="radio" id="Department" name="dept" value="Mech" >
+    <label for="MEch"> Mech</label>
+
+    <input type="radio" id="Department" name="dept" value="Ec" >
+    <label for="EC">EC</label><br><br>
+
+    <label for="yop">YOG </label>
+    <input list="YOG" id="yop" name="YOG" >
+    <datalist id="YOG">
+    <option>2017</option>
+    <option>2018</option>
+    <option>2019</option>
+    <option>2020</option>
+    <option>2021</option>
+    </datalist>
+    <br><br>
+    
+    <label for="SKILLS" > SKILLS</label>
+   
+    <input type="checkbox" id="HTML" name="html" >
+    <label for="HTML" >HTML</label>
+    
+    <input type="checkbox" id="css" name="css" >
+    <label for="css"> CSS</label>
+    
+    <input type="checkbox" id="java" name="java" >
+    <label for="java" >JAVA</label>
+    
+    <input type="checkbox" id="sql" name="sql" value="sql">
+    <label for="sql">SQL</label><br><br>
+
+
+<br><br>
+
+    
+    </datalist>
+</fieldset>
+<input type="submit">
+
+</form>
+</body>
+</html>

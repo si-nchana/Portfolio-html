@@ -1,41 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContactMe</title>
-</head>
-<style>
-    h2{
-        font: 80;
-        font-size: large;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 300%;
-    }
-  body{
-    background-color:linen;
+
+    <title>contact</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
     padding: 20px;
-    text-align: left;
-    font-size: 200%;
-    background-image: url("Screenshot\ 2023-09-24\ 200845.png");
-    background-size: 97%;
-   
+}
 
-  }
-  pre{
-    
+/* Style the form container */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    height: 50;
-    color:brown;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-</style>
+/* Style the fieldset for personal details */
+fieldset:nth-child(1) {
+    border: 3px ridge brown;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the legend for personal details */
+fieldset:nth-child(1) legend {
+    text-align: center;
+    border: 3px ridge brown;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style labels for input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the fieldset for educational details */
+fieldset:nth-child(2) {
+    border: 3px ridge brown;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style the legend for educational details */
+fieldset:nth-child(2) legend {
+    text-align: center;
+    border: 3px ridge brown;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
 <body>
-   
-    <h2> Contact Me</h2>
-    <pre>  Email:sinchanabhat19@gmal.com</pre>
-    <pre>  Phone:9540963649</pre>
-    <pre>  Address : Shanhbhog House,mudradi post udupi District. </pre>
+    <h2>For contact, fill this form!!</h2>
+    <form>
+        <fieldset style="border: 3px ridge brown; width: 50%;">
+            <legend style="text-align: center; border: 3px ridge brown;">Personal details</legend>
+            <label for=" First name">First Name</label>
+            <input type="text" required id="First Name" name="First Name" ><br> <br>
+
+            <label for=" Last name">Last Name</label>
+            <input type="text" required id="Last Name" name="Last Name" ><br> <br>
+            
+            <label for=" Middle name">Middle Name</label>
+            <input type="text" required id="Middle Name" name="Middle Name" ><br> <br>
+            
+            <label for=" Email">Email</label>
+            <input type="email" required id="Email" name="Email" ><br> <br>
+            
+            <label for=" DOB">DOB</label>
+            <input type="date" required id="DOB" name="DOB" ><br> <br>
+        </fieldset>
+    </form>
+<form action="home3.html">
+        <fieldset style="border: 3px ridge brown; width:50%;">
+            <legend style="text-align: center; border: 3px ridge brown;">Educational Details</legend>
+
+            <label for="Department" >Skills</label>
+            <br><br>
+            <input type="radio" name="dept" id="CS" value="CS">
+            <label for="CS"> CS</label><br><br>
+
+            <input type="radio" name="dept" id="Civil" value="CS">
+            <label for="Civil">Civil</label><br><br>
+
+            <input type="radio" name="dept" id="Java" value="Java">
+            <label for="Java"> Java</label><br><br>
+
+            <input type="radio" name="dept" id="Mech" value="Mech">
+            <label for="Mech"> Mech</label><br><br>
+            
+            <label for="yop">yog</label>
+            <input list="yog" id="yop" name="yog">
+            <datalist id="yog">
+                <option> 2014</option>
+                <option> 2020</option>
+                <option> 2015</option>
+                <option> 2016</option>
+                <option> 2019</option>
+            </datalist><br><br>
+            <label for="Skills" >Skills</label>
+            <br><br>
+            <input type="checkbox" name="CSS" id="CSS">
+            <label for="CSS"> CSS</label><br><br>
+
+            <input type="checkbox" name="SQL" id="SQL">
+            <label for="SQL">SQL</label><br><br>
+
+            <input type="checkbox" name="Java" id="Java">
+            <label for="Java"> Java</label><br><br>
+
+            <input type="checkbox" name="Html" id="Html">
+            <label for="Html"> Html</label><br><br>
+        </fieldset>
+        <input id ="tw" type="submit">
+    </form>
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
